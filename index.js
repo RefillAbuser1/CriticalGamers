@@ -54,8 +54,8 @@ bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', 'bot-spam');
   if (!channel) return;
   channel.send(`Welcome to the server, ${member}`);
- }
-
+} else
+       
 });
 
 bot.login(process.env.BOT_TOKEN);
