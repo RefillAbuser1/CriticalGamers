@@ -38,7 +38,7 @@ bot.on('message', message => {
   } 
     
   if (command === "website") {
-     message.channel.sendMessage("Website: (Soon) | CriticalWebsite");
+     message.channel.sendMessage("Website: (Soon) | CriticalWebsite |");
   }
 	
   if (command === "help") {
