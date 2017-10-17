@@ -36,11 +36,14 @@ bot.on('message', message => {
   if (command === "donate") {
     message.channel.sendMessage("Help CriticalGamers stay online! | paypal.me/ServerSupport |");
   } 
-  
+    
+  if (command === "website") {
+	 message.channel.sendMessage("Website: (Soon) | CriticalWebsite");
+  }
   if (command === "help") {
 	 message.channel.sendMessage("Commands: say, donate | do ==invite for support |");
   }
-  
+
 });
 
 bot.login(process.env.BOT_TOKEN);
