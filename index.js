@@ -27,7 +27,7 @@ bot.on('message', message => {
 
   if (command === "say") {
     message.channel.sendMessage(args.join(" "));
-  } else
+  } 
 
   if (command === "invite") {
     message.channel.sendMessage("Invite: https://discord.gg/r4aBuTw");
