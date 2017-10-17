@@ -40,6 +40,7 @@ bot.on('message', message => {
   if (command === "website") {
 	 message.channel.sendMessage("Website: (Soon) | CriticalWebsite");
   }
+	
   if (command === "help") {
 	 message.channel.sendMessage("Commands: say, donate, website | do ==invite for support |");
   }
