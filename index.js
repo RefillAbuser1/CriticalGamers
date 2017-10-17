@@ -8,7 +8,7 @@ bot.on('ready', () => {
 
 bot.user.setPresence({game: {name: 'prefix: == | ==help', type:0 } });
 });
-
+ // Prefix settings
 bot.on('message', message => {
   if(message.author.bot) return;
   if(!message.content.startsWith(config.prefix)) return;
@@ -17,14 +17,14 @@ bot.on('message', message => {
   command = command.slice(config.prefix.length);
 
   let args = message.content.split(" ").slice(1);
-
+  // Add Command
   if (command === "add") {
     let numArry = args.map(n=> parseInt(n));
     let total = numArry.reduce( (p, c) => p+c);
 
     message.channel.sendMessage(total);
   } 
-
+  // list of shit
   if (command === "say") {
     message.channel.sendMessage(args.join(" "));
   } 
@@ -42,8 +42,12 @@ bot.on('message', message => {
   }
 	
   if (command === "help") {
-     message.channel.sendMessage("Commands: say, donate, website | do ==invite for support |");
+     message.channel.sendMessage("Commands: say, donate, play, website | do ==invite for support |");
   }
+
+ if (command === "play") {
+     message.channel.sendMessage("music coming soon!");
+ }
 
 });
 
