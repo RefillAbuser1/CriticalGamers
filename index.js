@@ -41,7 +41,7 @@ bot.on('message', message => {
 	 message.channel.sendMessage("Website: (Soon) | CriticalWebsite");
   }
   if (command === "help") {
-	 message.channel.sendMessage("Commands: say, donate | do ==invite for support |");
+	 message.channel.sendMessage("Commands: say, donate, website | do ==invite for support |");
   }
 
 });
