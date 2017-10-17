@@ -38,7 +38,9 @@ bot.on('message', message => {
   } 
   
   if (command === "help") {
-	 message.channel.sendMessage("Commands: say, donate | do ==invite for support |")
+	 message.channel.sendMessage("Commands: say, donate | do ==invite for support |");
+  }
+  
 });
 
 bot.login(process.env.BOT_TOKEN);
